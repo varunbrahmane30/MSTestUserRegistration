@@ -7,8 +7,7 @@ namespace Day20_UserRegistrationProblem
 {
     public class RegisterUser
     {
-        public static string Regex_Password = "^*(?=.{8,})(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).*$";
-
+        public static string Regex_Password = "^*(?=.{8,})(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$";
 
         public static bool validatePassword(string password)
         {
