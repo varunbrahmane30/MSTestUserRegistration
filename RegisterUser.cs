@@ -7,11 +7,12 @@ namespace Day20_UserRegistrationProblem
 {
     public class RegisterUser
     {
-        public static String Regex_Name = "^[A-Z]{1}[A-Za-z]{1}[a-zA-Z]*$";
-
-        public bool validateFirstName(string firstName)
+       
+        public static string Regex_lName = "^[A-Z]{1}[A-Za-z]{1}[a-zA-Z]*$";
+       
+        public static bool validateLastName(string lastName)
         {
-            if (Regex.IsMatch(firstName, Regex_Name) == true)
+            if (Regex.IsMatch(lastName, Regex_lName) == true)
                 return true;
             else
                 return false;
