@@ -13,7 +13,7 @@ namespace UserTest
         [TestMethod]
         public void TestMethod1()
         {
-            var result = RegisterUser.validateEmail("Brahmane30@gmail.com");
+            var result = RegisterUser.validateMobileNo("+91 70403911139");
             Assert.AreEqual(true, result);
         }
     }
