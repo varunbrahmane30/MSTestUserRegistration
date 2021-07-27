@@ -8,11 +8,11 @@ namespace Day20_UserRegistrationProblem
     public class RegisterUser
     {
 
-        public static string Regex_MobileNo = "(0|91)?[ ][6-9][0-9]{9}";
+        public static string Regex_Password = "[a-zA-Z0-9]{8}[a-zA-Z0-9]*";
 
-        public static bool validateMobileNo(string mobileNo)
+        public static bool validatePassword(string password)
         {
-            if (Regex.IsMatch(mobileNo, Regex_MobileNo) == true)
+            if (Regex.IsMatch(password, Regex_Password) == true)
                 return true;
             else
                 return false;
