@@ -13,7 +13,7 @@ namespace UserTest
         [TestMethod]
         public void TestMethod1()
         {
-            var result = RegisterUser.validatePassword("abcdefghijk");
+            var result = RegisterUser.validatePassword("Abcdefghijk");
             Assert.AreEqual(true, result);
         }
     }
